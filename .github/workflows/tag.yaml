@@ -13,7 +13,7 @@ jobs:
         fetch-depth: 0
     - name: Get Branch
       run: |
-        raw=$(git branch --contains ${{ github.ref }})
+        raw=$(git branch -r --contains ${{ github.ref }})
         echo $raw
         raw=$(git branch --contains ${{ github.ref }} | grep -v "*" | tr -d '[:space:]')
         echo $raw
