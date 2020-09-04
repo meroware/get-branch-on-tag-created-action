@@ -1,6 +1,6 @@
 {
   "name": "get-branch-on-tag-created-action",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Get branch name for which a tag was created on",
   "main": "index.js",
   "scripts": {
