@@ -1,6 +1,8 @@
 name: Tag
 on: 
-  push:
+  create:
+    tags:
+      - v*
 jobs:
   job1:
     runs-on: ubuntu-latest
