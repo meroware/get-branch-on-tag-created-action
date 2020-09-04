@@ -9,4 +9,5 @@ jobs:
     steps:
     - name: checkout source code
       uses: actions/checkout@v1
-    - run: ${{ github.ref }}
+    - run: echo ${{ github.ref }}
+    - run: echo $(git branch --show-current)
