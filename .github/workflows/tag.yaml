@@ -11,6 +11,8 @@ jobs:
       uses: actions/checkout@v1
     - name: Get Branch
       run: |
+        raw=$(git branch --contains ${{ github.ref }}')
+        echo $raw
         raw=$(git branch --contains ${{ github.ref }} | grep -v "*" | tr -d '[:space:]')
         echo $raw
         branch=${raw:2}
