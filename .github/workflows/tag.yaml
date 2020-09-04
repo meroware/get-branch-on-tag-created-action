@@ -9,5 +9,6 @@ jobs:
     steps:
     - name: checkout source code
       uses: actions/checkout@v1
-    - run: echo ${{ github.ref }}
+    - run: echo $(git branch --contains ${{ github.ref }})  
     - run: echo $(git branch --show-current)
+    - run: echo $(git branch --contains ${{ github.ref }} | sed -n -e 's/^\* \(.*\)/\1/p')
