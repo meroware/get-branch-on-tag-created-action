@@ -1,0 +1,19 @@
+{
+  "name": "get-branch-on-tag-created-action",
+  "version": "1.0.0",
+  "description": "Get branch name for which a tag was created on",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meroware/get-branch-on-tag-created-action.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meroware/get-branch-on-tag-created-action/issues"
+  },
+  "homepage": "https://github.com/meroware/get-branch-on-tag-created-action#readme"
+}

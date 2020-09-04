@@ -1,0 +1,11 @@
+name: Tag
+on: 
+  push:
+    tags: 
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout source code
+      uses: actions/checkout@v1
+    - run: ${{ github.ref }}
