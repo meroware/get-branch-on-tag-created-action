@@ -9,6 +9,8 @@ jobs:
     steps:
     - name: checkout source code
       uses: actions/checkout@v1
+      with:
+        fetch-depth: 0
     - name: Get Branch
       run: |
         raw=$(git branch --contains ${{ github.ref }})
