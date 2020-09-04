@@ -12,8 +12,5 @@ jobs:
     - name: Get Branch
       run: |
         raw=$(git branch -r --contains ${{ github.ref }})
-        echo $raw
-        branch=${raw/origin\/}
-        echo $branch
-        echo '::set-env name=BRANCH::$branch'
+        echo '::set-env name=BRANCH::${raw/origin\/}'
     - run: echo ${{ env.BRANCH }}
